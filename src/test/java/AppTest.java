@@ -15,7 +15,7 @@ public class AppTest {
         List<String> inputs = Arrays.asList("ITEM0001 x 1", "ITEM0013 x 2", "ITEM0022 x 1");
         App app = new App(new ItemRepositoryTestImpl(), new SalesPromotionRepositoryTestImpl());
         String receiptString = app.bestCharge(inputs);
-
+//        System.out.println(receiptString);
         assertThat(receiptString, is("============= Order details =============\n" +
                 "Braised chicken x 1 = 18 yuan\n" +
                 "Chinese hamburger x 2 = 12 yuan\n" +
